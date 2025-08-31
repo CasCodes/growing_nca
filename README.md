@@ -3,10 +3,11 @@
 > See their amazing explanation at https://distill.pub/2020/growing-ca/
 
 In this small project I try to implement the growing NCA as proposed by Mordvintsev, et al. 
-However, for simplicities sake I used a only 8 channels, with 4 hidden channels. 
-That means that the number of learned kernel weights for the update convolution is only ..., which may not be enough to display comlex images.
 
-The full "TUM" logo appears to be a bit too detailed for this version, but at least it managed the "T" quite well:
+For simplicities sake I only used 8 channels, with 4 being hidden channels. 
+To learn the update rules this implementation uses a 1x1 convolution which takes a 24-dimensional "percieved" vector for each cell, expands it to 32-dimensions and then compresses it to 8 dimensions (channels) which is the cell state for the next epoch.
+
+The full "TUM" logo appears to be a bit too detailed for this simplified version of the growing-ca, but at least it managed to learn the "T" quite well:
 
 
 <img width="200" alt="Screenshot 2025-08-31 at 19 50 04" src="https://github.com/user-attachments/assets/2897a9e2-1fbd-4f17-b1c1-9fb9022d1efd" />
