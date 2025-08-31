@@ -16,5 +16,5 @@ The full "TUM" logo appears to be a bit too detailed for this simplified version
 
 (left: target image "T", right: snapshot of the NCA during training)
 
-Here you can see a pretty little gif of the NCA trying to learn the target image over 1500 epochs:
+Here you can see a pretty little gif of the NCA trying to learn the target image over around 1500 epochs:
 ![nca_evolution_1500epochs_8channels](https://github.com/user-attachments/assets/0b92f731-0edf-4521-b692-2ee95636d7df)
